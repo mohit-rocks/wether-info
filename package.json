@@ -1,0 +1,21 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "Displays the weather for the current location based on API",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "@types/jest": "26.0.15",
+    "dotenv": "^16.3.1",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.6.1",
+    "typescript": "^5.3.3"
+  },
+  "author": "",
+  "license": "ISC"
+}

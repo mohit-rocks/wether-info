@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Weather checker</title>
+    <meta charset="UTF-8" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.11/tailwind.min.css'>
+  </head>
+
+  <body>
+    <div id="app">
+      <h1 class="text-xl font-semibold">Check weather!</h1>
+      <label for="city">City along with country name</label>
+      <input class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="city" name="city" type="text" placeholder="Place" required>
+      <p>Provide city name with country name with comma. i.e. Rajkot, India</p>
+      <button id="search" class="bg-blue-500 text-white font-bold py-2 px-4 rounded-full">Search</button>
+      <div id="weather-card" class="weather"></div>
+    </div>
+
+    <script src="src/index.ts"></script>
+  </body>
+
+</html>

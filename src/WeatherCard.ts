@@ -1,7 +1,9 @@
 import {WeatherData} from "./WeatherInterfaces";
 
 export function printWeather(weatherdata: WeatherData) {
-    let date = new Date(weatherdata.dt).toDateString();
+    // Multiply timestamp since it is in milliseconds.
+    let date = new Date(weatherdata.dt * 1000).toDateString();
+    console.log(date);
     let content = `<div class="weather" id="weather-card">` +
         `<div class="flex flex-wrap">` +
             `<div class="w-full px-2 bg-gray-900 text-white relative min-w-0 break-words rounded-lg">` +
